@@ -1,0 +1,7 @@
+<form [formGroup]="searchForm">
+  <input placeholder="search..." formControlName="search" />
+</form>
+
+@for (user of users; track $index){
+<h2>{{ user.title }}</h2>
+}
